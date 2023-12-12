@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Technology Company Layoff Report</title>
+<title>Technology Company Layoffs Report</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,13 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
 img {
   float: left;
 }
@@ -27,22 +20,20 @@ img {
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small">DATA 303 Project</a>
-    
   </div>
 </div>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px" style="margin-right:150px">
+<div class="w3-main" style="margin-left:300px" style="margin-right:50px">
 
-  <div class="w3-row w3-padding-32">
+  <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal w3-center"><b>Exploring Technology Company Layoffs</b></h1>
 
       <div style="position: relative;">
-        <img src="image/bg.png" alt="Header" width="600px" style="margin-left: 80px; margin-right: 150px; margin-bottom: -20px;">
-        <p style="position: relative; left: 13%; width: 80%; text-align: left;">
+        <img src="image/bg.png" alt="Header" width="700px" style="margin-left: 5px; margin-bottom: -20px;">
+        <p style="position: relative; left: 1%; width: 80%; text-align: left;">
           <span style="font-size: 55%; line-height: 0.8; color: grey;">
             ILLUSTRATION BY GRACELYNN WAN FOR FORBES PHOTO BY COMPASSIONATE EYE FOUNDATION MARTIN BARRAUD/OJO IMAGES LTD/GETTY IMAGES
           </span>
@@ -136,17 +127,15 @@ img {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
       <p><img src="image/bar_industry.png" alt="Top 10 Layoff Companies" width="600px"></p>
       <p> <span style="font-weight: bold; background-color: #cbb5d3;">Fintech</span> emerges at the forefront, 
         holding the top rank with <span style="font-weight: bold; background-color: #cbb5d3;">50 firms</span> undergoing layoffs in this particular industry. 
-        I've chosen to utilize a more detailed industry categories for a nuanced comprehension of the data points, opting for a more granular approach.</p>
+        I've chosen to utilize a more detailed industry categories for a nuanced comprehension of the data points.</p>
       <br></br>
       <p><img src="image/bar_location.png" alt="Top 10 Layoff Companies" width="600px"></p>
       <p> <span style="font-weight: bold; background-color: #cbb5d3;">San Francisco</span> 
         stands out with the highest count of layoff companies, totaling <span style="font-weight: bold; background-color: #cbb5d3;">136 firms</span>.
         The Choropleth Map provided earlier also offers insights into potential areas with higher layoff occurrences. </p>
-      <br></br>
       <br></br>
       <p><img src="image/bar_status.png" alt="Top 10 Layoff Companies" width="600px"></p>
       <p> <span style="font-weight: bold; background-color: #cbb5d3;">Private</span> companies, 
@@ -231,7 +220,9 @@ img {
         For a detailed breakdown of the data cleansing process, you can refer to the code <a href="https://github.com/IsabellaFZli/data_vis_final" target="_blank">HERE</a>. 
          </p>
     </div>
-      <p><img src="image/me.png" alt="Author" width="250px"></p>
+    <p style="margin-top: 90px;">
+      <img src="image/me.png" alt="Author" width="200px">
+    </p>
     </div>
   </div>
 
@@ -247,31 +238,6 @@ img {
 
 <!-- END MAIN -->
 </div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
 
 </body>
 </html>
